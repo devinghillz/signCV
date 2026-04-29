@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+
+checkpoints/
+data/forget_set.json
+data/eval_data.json
+data/bbq_forget_set.json
+data/bbq_eval_data.json

@@ -1,0 +1,38 @@
+base_model: mistralai/Mistral-7B-Instruct-v0.3
+
+dataset:
+  name: local_stereoset_preprocessed
+  config: null
+  split_train: train
+  split_eval: train
+  axis_field: axis
+  text_field: text
+  prompt_field: prompt
+  choices_field: choices
+  label_field: label
+
+train:
+  axes: [race, gender, religion, profession]
+  learning_rates: [0.001, 0.005]
+  seeds: [42, 43]
+  epochs: 10
+  batch_size: 1
+  grad_accum: 4
+  max_length: 128
+  lora_r: 64
+  lora_alpha: 128
+  lora_dropout: 0.0
+  max_samples_dryrun: 64
+
+merge:
+  unanimity_ratio: 1.0
+  delta_extra_scale: 2.0
+
+projection:
+  k_grid: [0.1, 0.2, 0.35, 0.5, 0.75, 1.0]
+
+paths:
+  adapters_root: checkpoints/signcv_adapters
+  merged_root: checkpoints/signcv_merged
+  debiased_root: checkpoints/signcv_debiased
+  eval_root: checkpoints/signcv_eval
