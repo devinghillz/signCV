@@ -89,11 +89,11 @@ def main() -> None:
         prompt = str(ex["prompt"])
         choices = [str(c) for c in ex["choices"]]
         label = int(ex["label"])
-        target_label = int(ex["target_label"])
+        stereotype_label = int(ex["stereotype_label"])
         scores = [scorer(prompt, c) for c in choices]
         pred = max(range(len(scores)), key=lambda i: scores[i])
         correct += int(pred == label)
-        target_pref += int(pred == target_label)
+        target_pref += int(pred == stereotype_label)
         total += 1
         ans_ids = tok(choices[label], return_tensors="pt", add_special_tokens=False).input_ids
         ntok += int(ans_ids.numel())
@@ -104,7 +104,7 @@ def main() -> None:
         "architecture": arch,
         "num_samples": total,
         "accuracy": correct / max(total, 1),
-        "bias_target_preference": target_pref / max(total, 1),
+        "stereotype_preference": target_pref / max(total, 1),
         "ppl_proxy": math.exp(nll / max(ntok, 1)),
     }
     out_path = Path(args.output_json)

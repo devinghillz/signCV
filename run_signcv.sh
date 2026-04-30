@@ -38,7 +38,7 @@ for axis in "${AXES[@]}"; do
       tag="${axis}_lr${lr}_seed${seed}"
       out="${ADAPTERS_ROOT}/${tag}"
       ADAPTER_DIRS+=("$out")
-      python train_lora_axis.py \
+python3 train_lora_axis.py \
         --base_model "$BASE_MODEL" \
         --data_mode "$DATA_MODE" \
         --data_file "$TRAIN_FILE" \
@@ -57,7 +57,7 @@ for axis in "${AXES[@]}"; do
   done
 done
 
-python merge_sign_consensus.py \
+python3 merge_sign_consensus.py \
   --adapter_dirs "${ADAPTER_DIRS[@]}" \
   --output_dir "$MERGED_ROOT" \
   --axes "${AXES[@]}" \
@@ -66,14 +66,14 @@ python merge_sign_consensus.py \
 
 for k in "${K_VALUES[@]}"; do
   out_model="${DEBIASED_ROOT}/k_${k}"
-  python project_debias.py \
+python3 project_debias.py \
     --base_model "$BASE_MODEL" \
     --delta_star_path "${MERGED_ROOT}/delta_star.pt" \
     --output_dir "$out_model" \
     --k "$k"
 
   for axis in "${AXES[@]}"; do
-    python eval_bbq.py \
+python3 eval_bbq.py \
       --model_path "$out_model" \
       --data_mode "$DATA_MODE" \
       --data_file "$EVAL_FILE" \

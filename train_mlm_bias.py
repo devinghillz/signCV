@@ -143,7 +143,6 @@ def main() -> None:
         args=training_args,
         train_dataset=tokenized,
         data_collator=collator,
-        tokenizer=tokenizer,
     )
     trainer.train()
     trainer.save_model(args.output_dir)
