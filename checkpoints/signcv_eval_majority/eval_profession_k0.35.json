@@ -1,0 +1,13 @@
+{
+  "model_path": "checkpoints/signcv_debiased_majority/k_0.35",
+  "dataset_name": null,
+  "dataset_config": null,
+  "split": "validation",
+  "axis": "profession",
+  "num_samples": 200,
+  "accuracy": 0.23,
+  "perplexity_proxy": 6.212224709437582,
+  "stereotype_preference": 0.7085427135678392,
+  "anti_stereotype_preference": 0.2914572864321608,
+  "stereoset_pairs_compared": 199
+}

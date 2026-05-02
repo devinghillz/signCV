@@ -1,0 +1,13 @@
+{
+  "model_path": "checkpoints/signcv_debiased/k_0.2",
+  "dataset_name": null,
+  "dataset_config": null,
+  "split": "validation",
+  "axis": "gender",
+  "num_samples": 200,
+  "accuracy": 0.28,
+  "perplexity_proxy": 5.962386139226696,
+  "stereotype_preference": 0.7135678391959799,
+  "anti_stereotype_preference": 0.2864321608040201,
+  "stereoset_pairs_compared": 199
+}

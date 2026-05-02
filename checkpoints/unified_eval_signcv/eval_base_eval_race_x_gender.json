@@ -1,0 +1,8 @@
+{
+  "model_path": "mistralai/Mistral-7B-Instruct-v0.3",
+  "architecture": "causal_lm",
+  "num_samples": 15960,
+  "accuracy": 0.26340852130325815,
+  "stereotype_preference": 0.49291979949874687,
+  "ppl_proxy": 33.616730897593065
+}

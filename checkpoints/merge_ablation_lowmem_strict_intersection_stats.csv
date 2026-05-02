@@ -1,0 +1,13 @@
+folder,unanimity_ratio,delta_extra_scale,cross_axis_mode,l2,mean_abs,max_abs,nnz,frac_nnz,n_keys,tot_elems,bytes,delta_star_path,file_exists
+ur0.5_xs1.0,0.5,1.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362333,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur0.5_xs1.0/delta_star.pt,True
+ur0.5_xs2.0,0.5,2.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362177,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur0.5_xs2.0/delta_star.pt,True
+ur0.5_xs3.0,0.5,3.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362249,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur0.5_xs3.0/delta_star.pt,True
+ur0.67_xs1.0,0.67,1.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362189,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur0.67_xs1.0/delta_star.pt,True
+ur0.67_xs2.0,0.67,2.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362309,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur0.67_xs2.0/delta_star.pt,True
+ur0.67_xs3.0,0.67,3.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362285,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur0.67_xs3.0/delta_star.pt,True
+ur0.75_xs1.0,0.75,1.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362213,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur0.75_xs1.0/delta_star.pt,True
+ur0.75_xs2.0,0.75,2.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362213,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur0.75_xs2.0/delta_star.pt,True
+ur0.75_xs3.0,0.75,3.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362345,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur0.75_xs3.0/delta_star.pt,True
+ur1.0_xs1.0,1.0,1.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362261,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur1.0_xs1.0/delta_star.pt,True
+ur1.0_xs2.0,1.0,2.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362225,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur1.0_xs2.0/delta_star.pt,True
+ur1.0_xs3.0,1.0,3.0,intersection,0.0,0.0,0.0,0,0.0,224,6979321856,27917362261,/workspace/seunghun_kdd/checkpoints/merge_ablation_lowmem/ur1.0_xs3.0/delta_star.pt,True

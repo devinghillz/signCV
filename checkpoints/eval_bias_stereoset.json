@@ -1,0 +1,8 @@
+{
+  "model_path": "checkpoints/bias_stereoset",
+  "architecture": "masked_lm",
+  "num_samples": 2106,
+  "accuracy": 0.3903133903133903,
+  "bias_target_preference": 0.3903133903133903,
+  "ppl_proxy": 6.5547069646876635
+}
