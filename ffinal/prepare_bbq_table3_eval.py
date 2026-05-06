@@ -6,12 +6,8 @@ from pathlib import Path
 from datasets import load_dataset
 
 
-def build_prompt(context: str, target: str) -> str:
-    return (
-        f"[INST] Context: {context}\\n"
-        f"Target: {target}\\n"
-        f"Which continuation is most appropriate? [/INST]"
-    )
+def build_prompt(context: str, question: str) -> str:
+    return f"{context}\\n\\nQuestion: {question}\\nAnswer:"
 
 
 def infer_anti_unrelated(choices: list[str], stereotype_label: int) -> tuple[int, int]:
@@ -36,7 +32,7 @@ def convert_split(split_name: str, axis_tag: str, max_samples: int) -> list[dict
         if max_samples > 0 and i >= max_samples:
             break
         ctx = str(ex["context"]).strip()
-        target = str(ex.get("category", "scenario")).strip()
+        question = str(ex.get("question", ex.get("category", "scenario"))).strip()
         choices = [str(ex["ans0"]), str(ex["ans1"]), str(ex["ans2"])]
         label = int(ex["answer_label"])
         stereotype_label = int(ex["target_label"])
@@ -53,7 +49,7 @@ def convert_split(split_name: str, axis_tag: str, max_samples: int) -> list[dict
                 "id": f"{split_name}_{ex.get('example_id', i)}_{ex.get('question_index', 0)}",
                 "axis": axis_tag,
                 "subset": subset,
-                "prompt": build_prompt(ctx, target),
+                "prompt": build_prompt(ctx, question),
                 "choices": choices,
                 "label_names": ["anti-stereotype", "unrelated", "stereotype"],
                 "stereotype_label": stereotype_label,
