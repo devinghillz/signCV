@@ -252,7 +252,10 @@ def main() -> None:
         results = eval_table3_fmt(model, tok, eval_data, device, args.max_length)
 
     retain_path = args.retain_json or ""
-    ppl = compute_ppl(model, tok, retain_path, args.ppl_samples, args.max_length)
+    if retain_path and Path(retain_path).exists():
+        ppl = compute_ppl(model, tok, retain_path, args.ppl_samples, args.max_length)
+    else:
+        ppl = None
     results["PPL"]        = ppl
     results["model_path"] = args.model_path
     results["eval_json"]  = args.eval_json

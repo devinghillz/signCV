@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 import re
 from typing import Iterable
 
@@ -34,7 +35,6 @@ def _get_lora_scaling(state: dict[str, torch.Tensor], prefix: str, default_scale
         alpha = float(state[alpha_key].item())
         rank = float(state[rank_key].item())
         return alpha / max(rank, 1.0)
-    # Fallback: if metadata keys are absent, use caller-provided default.
     return float(default_scale)
 
 
@@ -90,6 +90,7 @@ def sign_unanimity_merge(
 
 def cross_axis_sign_intersection(
     axis_vectors: list[dict[str, torch.Tensor]],
+    tau_cross: float = 1.0,
     eps: float = 1e-12,
 ) -> dict[str, torch.Tensor]:
     if not axis_vectors:
@@ -100,6 +101,9 @@ def cross_axis_sign_intersection(
     if not keys:
         raise ValueError("No common keys across axis vectors.")
 
+    n_axes = len(axis_vectors)
+    threshold = max(1, int(math.ceil(n_axes * float(tau_cross))))
+
     out: dict[str, torch.Tensor] = {}
     for k in keys:
         tensors = [d[k].float() for d in axis_vectors]
@@ -107,9 +111,11 @@ def cross_axis_sign_intersection(
         normed = [t / n for t, n in zip(tensors, norms)]
         stacked = torch.stack(normed, dim=0)
         signs = torch.sign(stacked)
-        pos_all = (signs > 0).all(dim=0)
-        neg_all = (signs < 0).all(dim=0)
-        keep = pos_all | neg_all
+
+        pos = (signs > 0).sum(dim=0)
+        neg = (signs < 0).sum(dim=0)
+        keep = (pos >= threshold) | (neg >= threshold)
+
         merged = stacked.mean(dim=0)
         out[k] = torch.where(keep, merged, torch.zeros_like(merged))
     return out
