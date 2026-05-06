@@ -1,0 +1,14 @@
+{
+  "Bias": 0.024539877300613498,
+  "Delta": 0.9509202453987731,
+  "Bal": 0.5245398773006136,
+  "Target_Acc": 0.9754601226993865,
+  "Ambig_Acc": 0.0013774104683195593,
+  "Acc_all": 0.4643895348837209,
+  "n_target": 326,
+  "n_ambig": 726,
+  "n_overall": 1376,
+  "PPL": 153.4862752503618,
+  "model_path": "./checkpoints/debiased_signcv_k1.0",
+  "eval_json": "./processed_bbq/Race_ethnicity/eval_data.json"
+}

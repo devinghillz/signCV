@@ -1,0 +1,14 @@
+{
+  "Bias": 0.06200716845878136,
+  "Delta": 0.8731182795698924,
+  "Bal": 0.5620071684587813,
+  "Target_Acc": 0.9351254480286738,
+  "Ambig_Acc": 0.025985663082437275,
+  "Acc_all": 0.4831541218637993,
+  "n_target": 2790,
+  "n_ambig": 5580,
+  "n_overall": 11160,
+  "PPL": null,
+  "model_path": "mistralai/Mistral-7B-Instruct-v0.3",
+  "eval_json": "./processed_bbq/eval_race_x_ses.json"
+}

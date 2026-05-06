@@ -1,0 +1,123 @@
+[SignCV / BBQ Evaluation Results]
+
+Result directory: /workspace/seunghun_kdd/ffinal/results
+Source CSV: summary_results.csv
+Total result rows: 16
+
+Interpretation rule:
+- Bias: lower is better.
+- Target_Acc: higher or preserved is better.
+- Ambig_Acc: higher or preserved is better.
+- Acc_all: higher or preserved is better.
+- PPL: lower or preserved is better.
+
+Good debiasing result = Bias decreases while Target_Acc / Acc_all / PPL are preserved.
+
+====================================================================================================
+1. Full Metrics by Axis and Method
+====================================================================================================
+
+## Axis: Gender_identity
+| method | Bias | Delta | Bal | Target_Acc | Ambig_Acc | Acc_all | PPL | n_target | n_ambig | n_overall |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| base | 0.0249 | 0.9288 | 0.5249 | 0.9537 | 0.0105 | 0.4753 | 343.8514 | 281 | 570 | 1134 |
+| signcv | 0.0285 | 0.9217 | 0.5285 | 0.9502 | 0.0053 | 0.4727 | 292.5452 | 281 | 570 | 1134 |
+| mean_delta | 0.0285 | 0.9324 | 0.5285 | 0.9609 | 0.0018 | 0.4762 | 225.6033 | 281 | 570 | 1134 |
+| within_only | 0.0285 | 0.9324 | 0.5285 | 0.9609 | 0.0018 | 0.4753 | 220.1717 | 281 | 570 | 1134 |
+
+## Axis: Race_ethnicity
+| method | Bias | Delta | Bal | Target_Acc | Ambig_Acc | Acc_all | PPL | n_target | n_ambig | n_overall |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| base | 0.0307 | 0.9387 | 0.5307 | 0.9693 | 0.0014 | 0.4600 | 176.9400 | 326 | 726 | 1376 |
+| signcv | 0.0245 | 0.9509 | 0.5245 | 0.9755 | 0.0014 | 0.4644 | 153.4863 | 326 | 726 | 1376 |
+| mean_delta | 0.0245 | 0.9509 | 0.5245 | 0.9755 | 0.0000 | 0.4644 | 123.4629 | 326 | 726 | 1376 |
+| within_only | 0.0245 | 0.9509 | 0.5245 | 0.9755 | 0.0000 | 0.4651 | 122.5728 | 326 | 726 | 1376 |
+
+## Axis: SES
+| method | Bias | Delta | Bal | Target_Acc | Ambig_Acc | Acc_all | PPL | n_target | n_ambig | n_overall |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| base | 0.0811 | 0.8348 | 0.5811 | 0.9159 | 0.0044 | 0.4705 | 180.2725 | 333 | 689 | 1373 |
+| signcv | 0.0901 | 0.8168 | 0.5901 | 0.9069 | 0.0044 | 0.4683 | 155.0338 | 333 | 689 | 1373 |
+| mean_delta | 0.0871 | 0.8228 | 0.5871 | 0.9099 | 0.0029 | 0.4683 | 122.8885 | 333 | 689 | 1373 |
+| within_only | 0.0811 | 0.8348 | 0.5811 | 0.9159 | 0.0029 | 0.4705 | 121.5351 | 333 | 689 | 1373 |
+
+## Axis: race_x_gender
+| method | Bias | Delta | Bal | Target_Acc | Ambig_Acc | Acc_all | PPL | n_target | n_ambig | n_overall |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| base | 0.4987 | 0.0000 | 0.9987 | 0.4987 | 0.0198 | 0.2594 | - | 3984 | 7980 | 15960 |
+| signcv | 0.4992 | 0.0000 | 0.9992 | 0.4992 | 0.0163 | 0.2578 | - | 3984 | 7980 | 15960 |
+
+## Axis: race_x_ses
+| method | Bias | Delta | Bal | Target_Acc | Ambig_Acc | Acc_all | PPL | n_target | n_ambig | n_overall |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| base | 0.4993 | 0.0000 | 0.9993 | 0.4993 | 0.0090 | 0.2539 | - | 2790 | 5580 | 11160 |
+| signcv | 0.4993 | 0.0000 | 0.9993 | 0.4993 | 0.0065 | 0.2528 | - | 2790 | 5580 | 11160 |
+
+====================================================================================================
+2. Delta Compared to Base Model
+====================================================================================================
+
+## Axis: Gender_identity
+| method | ΔBias | ΔTarget_Acc | ΔAmbig_Acc | ΔAcc_all | ΔPPL |
+| --- | --- | --- | --- | --- | --- |
+| signcv | +0.0036 | -0.0036 | -0.0053 | -0.0026 | -51.3062 |
+| mean_delta | +0.0036 | +0.0071 | -0.0088 | +0.0009 | -118.2481 |
+| within_only | +0.0036 | +0.0071 | -0.0088 | +0.0000 | -123.6798 |
+
+## Axis: Race_ethnicity
+| method | ΔBias | ΔTarget_Acc | ΔAmbig_Acc | ΔAcc_all | ΔPPL |
+| --- | --- | --- | --- | --- | --- |
+| signcv | -0.0061 | +0.0061 | +0.0000 | +0.0044 | -23.4537 |
+| mean_delta | -0.0061 | +0.0061 | -0.0014 | +0.0044 | -53.4771 |
+| within_only | -0.0061 | +0.0061 | -0.0014 | +0.0051 | -54.3672 |
+
+## Axis: SES
+| method | ΔBias | ΔTarget_Acc | ΔAmbig_Acc | ΔAcc_all | ΔPPL |
+| --- | --- | --- | --- | --- | --- |
+| signcv | +0.0090 | -0.0090 | +0.0000 | -0.0022 | -25.2387 |
+| mean_delta | +0.0060 | -0.0060 | -0.0015 | -0.0022 | -57.3840 |
+| within_only | +0.0000 | +0.0000 | -0.0015 | +0.0000 | -58.7374 |
+
+## Axis: race_x_gender
+| method | ΔBias | ΔTarget_Acc | ΔAmbig_Acc | ΔAcc_all | ΔPPL |
+| --- | --- | --- | --- | --- | --- |
+| signcv | +0.0005 | +0.0005 | -0.0035 | -0.0016 | - |
+
+## Axis: race_x_ses
+| method | ΔBias | ΔTarget_Acc | ΔAmbig_Acc | ΔAcc_all | ΔPPL |
+| --- | --- | --- | --- | --- | --- |
+| signcv | +0.0000 | +0.0000 | -0.0025 | -0.0012 | - |
+
+====================================================================================================
+3. SignCV Summary Compared to Base
+====================================================================================================
+
+| axis | base Bias | signcv Bias | ΔBias | ΔTarget_Acc | ΔAcc_all | ΔPPL | verdict |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Gender_identity | 0.0249 | 0.0285 | +0.0036 | -0.0036 | -0.0026 | -51.3062 | Bias worsened |
+| Race_ethnicity | 0.0307 | 0.0245 | -0.0061 | +0.0061 | +0.0044 | -23.4537 | Positive |
+| SES | 0.0811 | 0.0901 | +0.0090 | -0.0090 | -0.0022 | -25.2387 | Bias worsened |
+| race_x_gender | 0.4987 | 0.4992 | +0.0005 | +0.0005 | -0.0016 | - | Bias worsened |
+| race_x_ses | 0.4993 | 0.4993 | +0.0000 | +0.0000 | -0.0012 | - | No Bias change |
+
+====================================================================================================
+4. Raw CSV Dump
+====================================================================================================
+
+file,method,axis,Acc_all,Ambig_Acc,Bal,Bias,Delta,PPL,Target_Acc,eval_json,model_path,n_ambig,n_overall,n_target
+base_Gender_identity.json,base,Gender_identity,0.47530864197530864,0.010526315789473684,0.5249110320284698,0.02491103202846975,0.9288256227758007,343.8514432158648,0.9537366548042705,./processed_bbq/Gender_identity/eval_data.json,mistralai/Mistral-7B-Instruct-v0.3,570,1134,281
+base_Race_ethnicity.json,base,Race_ethnicity,0.46002906976744184,0.0013774104683195593,0.5306748466257669,0.03067484662576687,0.9386503067484662,176.93999540470006,0.9693251533742331,./processed_bbq/Race_ethnicity/eval_data.json,mistralai/Mistral-7B-Instruct-v0.3,726,1376,326
+base_SES.json,base,SES,0.47050254916241807,0.0043541364296081275,0.5810810810810811,0.08108108108108109,0.8348348348348349,180.27248043510718,0.9159159159159159,./processed_bbq/SES/eval_data.json,mistralai/Mistral-7B-Instruct-v0.3,689,1373,333
+base_race_x_gender.json,base,race_x_gender,0.2593984962406015,0.019799498746867168,0.9987449799196787,0.4987449799196787,0.0,,0.4987449799196787,./processed_bbq/eval_race_x_gender.json,mistralai/Mistral-7B-Instruct-v0.3,7980,15960,3984
+base_race_x_ses.json,base,race_x_ses,0.2539426523297491,0.008960573476702509,0.9992831541218639,0.4992831541218638,0.0,,0.4992831541218638,./processed_bbq/eval_race_x_ses.json,mistralai/Mistral-7B-Instruct-v0.3,5580,11160,2790
+mean_delta_Gender_identity.json,mean_delta,Gender_identity,0.47619047619047616,0.0017543859649122807,0.5284697508896797,0.028469750889679714,0.9323843416370107,225.60333346610267,0.9608540925266904,./processed_bbq/Gender_identity/eval_data.json,./checkpoints/debiased_mean_delta_k1.0,570,1134,281
+mean_delta_Race_ethnicity.json,mean_delta,Race_ethnicity,0.4643895348837209,0.0,0.5245398773006136,0.024539877300613498,0.9509202453987731,123.46289404599261,0.9754601226993865,./processed_bbq/Race_ethnicity/eval_data.json,./checkpoints/debiased_mean_delta_k1.0,726,1376,326
+mean_delta_SES.json,mean_delta,SES,0.46831755280407866,0.002902757619738752,0.587087087087087,0.08708708708708708,0.8228228228228228,122.88851413748566,0.9099099099099099,./processed_bbq/SES/eval_data.json,./checkpoints/debiased_mean_delta_k1.0,689,1373,333
+signcv_Gender_identity.json,signcv,Gender_identity,0.47266313932980597,0.005263157894736842,0.5284697508896797,0.028469750889679714,0.9217081850533808,292.54521739202903,0.9501779359430605,./processed_bbq/Gender_identity/eval_data.json,./checkpoints/debiased_signcv_k1.0,570,1134,281
+signcv_Race_ethnicity.json,signcv,Race_ethnicity,0.4643895348837209,0.0013774104683195593,0.5245398773006136,0.024539877300613498,0.9509202453987731,153.4862752503618,0.9754601226993865,./processed_bbq/Race_ethnicity/eval_data.json,./checkpoints/debiased_signcv_k1.0,726,1376,326
+signcv_SES.json,signcv,SES,0.46831755280407866,0.0043541364296081275,0.5900900900900901,0.09009009009009009,0.8168168168168168,155.0337631938789,0.9069069069069069,./processed_bbq/SES/eval_data.json,./checkpoints/debiased_signcv_k1.0,689,1373,333
+signcv_race_x_gender.json,signcv,race_x_gender,0.25776942355889726,0.016290726817042606,0.9992469879518072,0.4992469879518072,0.0,,0.4992469879518072,./processed_bbq/eval_race_x_gender.json,./checkpoints/debiased_signcv_k1.0,7980,15960,3984
+signcv_race_x_ses.json,signcv,race_x_ses,0.25277777777777777,0.0064516129032258064,0.9992831541218639,0.4992831541218638,0.0,,0.4992831541218638,./processed_bbq/eval_race_x_ses.json,./checkpoints/debiased_signcv_k1.0,5580,11160,2790
+within_only_Gender_identity.json,within_only,Gender_identity,0.47530864197530864,0.0017543859649122807,0.5284697508896797,0.028469750889679714,0.9323843416370107,220.17166461617853,0.9608540925266904,./processed_bbq/Gender_identity/eval_data.json,./checkpoints/debiased_within_only_k1.0,570,1134,281
+within_only_Race_ethnicity.json,within_only,Race_ethnicity,0.46511627906976744,0.0,0.5245398773006136,0.024539877300613498,0.9509202453987731,122.57275192454873,0.9754601226993865,./processed_bbq/Race_ethnicity/eval_data.json,./checkpoints/debiased_within_only_k1.0,726,1376,326
+within_only_SES.json,within_only,SES,0.47050254916241807,0.002902757619738752,0.5810810810810811,0.08108108108108109,0.8348348348348349,121.53509580215389,0.9159159159159159,./processed_bbq/SES/eval_data.json,./checkpoints/debiased_within_only_k1.0,689,1373,333

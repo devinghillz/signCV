@@ -1,0 +1,14 @@
+{
+  "Bias": 0.03067484662576687,
+  "Delta": 0.9386503067484662,
+  "Bal": 0.5306748466257669,
+  "Target_Acc": 0.9693251533742331,
+  "Ambig_Acc": 0.0013774104683195593,
+  "Acc_all": 0.46002906976744184,
+  "n_target": 326,
+  "n_ambig": 726,
+  "n_overall": 1376,
+  "PPL": 176.93999540470006,
+  "model_path": "mistralai/Mistral-7B-Instruct-v0.3",
+  "eval_json": "./processed_bbq/Race_ethnicity/eval_data.json"
+}

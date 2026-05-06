@@ -1,0 +1,14 @@
+{
+  "Bias": 0.02491103202846975,
+  "Delta": 0.9288256227758007,
+  "Bal": 0.5249110320284698,
+  "Target_Acc": 0.9537366548042705,
+  "Ambig_Acc": 0.010526315789473684,
+  "Acc_all": 0.47530864197530864,
+  "n_target": 281,
+  "n_ambig": 570,
+  "n_overall": 1134,
+  "PPL": 343.8514432158648,
+  "model_path": "mistralai/Mistral-7B-Instruct-v0.3",
+  "eval_json": "./processed_bbq/Gender_identity/eval_data.json"
+}
