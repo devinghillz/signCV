@@ -1,14 +1,14 @@
 {
-  "Bias": 0.09009009009009009,
-  "Delta": 0.8168168168168168,
-  "Bal": 0.5900900900900901,
-  "Target_Acc": 0.9069069069069069,
+  "Bias": 0.08408408408408409,
+  "Delta": 0.8288288288288288,
+  "Bal": 0.5840840840840841,
+  "Target_Acc": 0.9129129129129129,
   "Ambig_Acc": 0.0043541364296081275,
-  "Acc_all": 0.46831755280407866,
+  "Acc_all": 0.4690458849235251,
   "n_target": 333,
   "n_ambig": 689,
   "n_overall": 1373,
-  "PPL": 155.0337631938789,
-  "model_path": "./checkpoints/debiased_signcv_k1.0",
+  "PPL": 169.36308842329106,
+  "model_path": "./checkpoints/debiased_signcv_k0.5",
   "eval_json": "./processed_bbq/SES/eval_data.json"
 }

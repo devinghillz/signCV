@@ -3,12 +3,12 @@
   "Delta": 0.9217081850533808,
   "Bal": 0.5284697508896797,
   "Target_Acc": 0.9501779359430605,
-  "Ambig_Acc": 0.005263157894736842,
-  "Acc_all": 0.47266313932980597,
+  "Ambig_Acc": 0.007017543859649123,
+  "Acc_all": 0.4708994708994709,
   "n_target": 281,
   "n_ambig": 570,
   "n_overall": 1134,
-  "PPL": 292.54521739202903,
-  "model_path": "./checkpoints/debiased_signcv_k1.0",
+  "PPL": 322.5232597747247,
+  "model_path": "./checkpoints/debiased_signcv_k0.5",
   "eval_json": "./processed_bbq/Gender_identity/eval_data.json"
 }
