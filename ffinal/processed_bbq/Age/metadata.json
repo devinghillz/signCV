@@ -1,0 +1,17 @@
+{
+  "target_category": "Age",
+  "dataset_source": "Elfsong/BBQ",
+  "statistics": {
+    "total_samples": 3680,
+    "filtered_samples": 3680,
+    "neutral_samples_excluded": 740,
+    "final_training_samples": 2204
+  },
+  "seed": 42,
+  "preprocessing_date": "2026-05-05T20:14:26.235096",
+  "data_quality": {
+    "neutral_samples_excluded": true,
+    "single_category_focus": true,
+    "mistral_chat_format": true
+  }
+}
