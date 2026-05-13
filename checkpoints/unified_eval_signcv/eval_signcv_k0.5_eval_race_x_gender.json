@@ -1,8 +1,0 @@
-{
-  "model_path": "checkpoints/signcv_debiased_majority/k_0.5",
-  "architecture": "causal_lm",
-  "num_samples": 15960,
-  "accuracy": 0.2629072681704261,
-  "stereotype_preference": 0.4931704260651629,
-  "ppl_proxy": 33.53638009330942
-}

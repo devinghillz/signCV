@@ -1,9 +1,0 @@
-Axis,Method,Bias_down,Delta_up,Bal_up,TargetAcc_up,AmbigAcc_up,Acc_all_up,PPL_down
-race,Base,0.6019,-0.2287,0.8981,NA,NA,0.3732,12.5911
-race,SignCV(k=0.5),0.5988,-0.2225,0.9012,NA,NA,0.3763,12.569
-gender,Base,0.702,-0.4314,0.798,NA,NA,0.2706,6.0704
-gender,SignCV(k=0.5),0.702,-0.4314,0.798,NA,NA,0.2706,6.0581
-profession,Base,0.637,-0.3309,0.863,NA,NA,0.3062,6.1057
-profession,SignCV(k=0.5),0.6383,-0.3346,0.8617,NA,NA,0.3037,6.1002
-religion,Base,0.6203,-0.2911,0.8797,NA,NA,0.3291,12.4904
-religion,SignCV(k=0.5),0.6203,-0.2911,0.8797,NA,NA,0.3291,12.4453

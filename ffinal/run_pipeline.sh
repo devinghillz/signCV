@@ -21,7 +21,7 @@ LORA_R=64
 LORA_ALPHA=128
 UNANIMITY_RATIO=0.75      # 논문 τ
 TAU_CROSS=0.67            # 논문 τ_cross
-K=1.0                     # 논문 k
+K=0.5                     # 논문 k
 
 # ─────────────── 경로 ───────────────
 DATA_DIR="./processed_bbq"
