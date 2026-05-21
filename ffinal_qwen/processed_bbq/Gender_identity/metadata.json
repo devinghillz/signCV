@@ -1,0 +1,17 @@
+{
+  "target_category": "Gender_identity",
+  "dataset_source": "Elfsong/BBQ",
+  "statistics": {
+    "total_samples": 5672,
+    "filtered_samples": 5672,
+    "neutral_samples_excluded": 1131,
+    "final_training_samples": 3391
+  },
+  "seed": 42,
+  "preprocessing_date": "2026-05-05T20:14:28.628629",
+  "data_quality": {
+    "neutral_samples_excluded": true,
+    "single_category_focus": true,
+    "mistral_chat_format": true
+  }
+}

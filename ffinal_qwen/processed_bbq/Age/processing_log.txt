@@ -1,0 +1,7 @@
+[20:14:25] INFO: Loaded 3680 samples for Age
+[20:14:25] INFO: Sample fields: ['category', 'example_id', 'question_index', 'question_polarity', 'context_condition', 'context', 'question', 'ans0', 'ans1', 'ans2', 'answer_info', 'answer_label', 'target_label', 'additional_metadata']
+[20:14:25] INFO: Category already filtered: 3680 samples
+[20:14:25] INFO: Split complete: Train=2944, Test=736
+[20:14:26] INFO: Created 2204 forget/retain pairs, excluded 740 neutral samples
+[20:14:26] INFO: Created evaluation set: 736 samples
+[20:14:26] INFO: All validation checks passed!

@@ -1,0 +1,37 @@
+{
+  "input_json": "./results/pairwise_axis_metrics.json",
+  "hypothesis": "H0: sign_agreement == 0.5 (random sign baseline)",
+  "mc_trials": 20000,
+  "rows": [
+    {
+      "pair": "Race\u2013Gender",
+      "observed_sign_agreement": 0.5139264464378357,
+      "n_both_nonzero": 2818083624,
+      "baseline_mean": 0.5,
+      "baseline_se": 9.418745587759069e-06,
+      "z_score": 1478.5882374755922,
+      "p_value_two_sided": 0.0,
+      "empirical_p_value_two_sided": 4.999750012499375e-05
+    },
+    {
+      "pair": "Race\u2013SES",
+      "observed_sign_agreement": 0.5129867196083069,
+      "n_both_nonzero": 2802363967,
+      "baseline_mean": 0.5,
+      "baseline_se": 9.445125529816034e-06,
+      "z_score": 1374.9652736018038,
+      "p_value_two_sided": 0.0,
+      "empirical_p_value_two_sided": 4.999750012499375e-05
+    },
+    {
+      "pair": "Gender\u2013SES",
+      "observed_sign_agreement": 0.5178431868553162,
+      "n_both_nonzero": 2824277762,
+      "baseline_mean": 0.5,
+      "baseline_se": 9.408411435450581e-06,
+      "z_score": 1896.5143029442386,
+      "p_value_two_sided": 0.0,
+      "empirical_p_value_two_sided": 4.999750012499375e-05
+    }
+  ]
+}

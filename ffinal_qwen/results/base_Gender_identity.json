@@ -1,0 +1,14 @@
+{
+  "Bias": 0.028469750889679714,
+  "Delta": 0.9252669039145908,
+  "Bal": 0.5284697508896797,
+  "Target_Acc": 0.9537366548042705,
+  "Ambig_Acc": 0.08596491228070176,
+  "Acc_all": 0.5123456790123457,
+  "n_target": 281,
+  "n_ambig": 570,
+  "n_overall": 1134,
+  "PPL": 88.60828883226249,
+  "model_path": "Qwen/Qwen2.5-7B-Instruct",
+  "eval_json": "./processed_bbq/Gender_identity/eval_data.json"
+}

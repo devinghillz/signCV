@@ -1,0 +1,7 @@
+[20:14:27] INFO: Loaded 5672 samples for Gender_identity
+[20:14:27] INFO: Sample fields: ['category', 'example_id', 'question_index', 'question_polarity', 'context_condition', 'context', 'question', 'ans0', 'ans1', 'ans2', 'answer_info', 'answer_label', 'target_label', 'additional_metadata']
+[20:14:27] INFO: Category already filtered: 5672 samples
+[20:14:27] INFO: Split complete: Train=4537, Test=1135
+[20:14:28] INFO: Created 3391 forget/retain pairs, excluded 1131 neutral samples
+[20:14:28] INFO: Created evaluation set: 1135 samples
+[20:14:28] INFO: All validation checks passed!

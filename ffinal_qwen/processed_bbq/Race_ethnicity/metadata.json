@@ -1,0 +1,17 @@
+{
+  "target_category": "Race_ethnicity",
+  "dataset_source": "Elfsong/BBQ",
+  "statistics": {
+    "total_samples": 6880,
+    "filtered_samples": 6880,
+    "neutral_samples_excluded": 1396,
+    "final_training_samples": 4108
+  },
+  "seed": 42,
+  "preprocessing_date": "2026-05-05T20:14:21.590868",
+  "data_quality": {
+    "neutral_samples_excluded": true,
+    "single_category_focus": true,
+    "mistral_chat_format": true
+  }
+}

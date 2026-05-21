@@ -1,0 +1,14 @@
+{
+  "Bias": 0.09236947791164658,
+  "Delta": 0.8152610441767068,
+  "Bal": 0.5923694779116466,
+  "Target_Acc": 0.9076305220883534,
+  "Ambig_Acc": 0.010150375939849625,
+  "Acc_all": 0.4619674185463659,
+  "n_target": 3984,
+  "n_ambig": 7980,
+  "n_overall": 15960,
+  "PPL": null,
+  "model_path": "./checkpoints/debiased_signcv_k0.5",
+  "eval_json": "./processed_bbq/eval_race_x_gender.json"
+}

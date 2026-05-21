@@ -1,0 +1,14 @@
+{
+  "Bias": 0.07507507507507508,
+  "Delta": 0.8438438438438439,
+  "Bal": 0.575075075075075,
+  "Target_Acc": 0.918918918918919,
+  "Ambig_Acc": 0.05660377358490566,
+  "Acc_all": 0.5010924981791697,
+  "n_target": 333,
+  "n_ambig": 689,
+  "n_overall": 1373,
+  "PPL": 69.7391962353861,
+  "model_path": "Qwen/Qwen2.5-7B-Instruct",
+  "eval_json": "./processed_bbq/SES/eval_data.json"
+}

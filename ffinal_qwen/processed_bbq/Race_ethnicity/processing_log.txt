@@ -1,0 +1,7 @@
+[20:14:20] INFO: Loaded 6880 samples for Race_ethnicity
+[20:14:20] INFO: Sample fields: ['category', 'example_id', 'question_index', 'question_polarity', 'context_condition', 'context', 'question', 'ans0', 'ans1', 'ans2', 'answer_info', 'answer_label', 'target_label', 'additional_metadata']
+[20:14:20] INFO: Category already filtered: 6880 samples
+[20:14:20] INFO: Split complete: Train=5504, Test=1376
+[20:14:21] INFO: Created 4108 forget/retain pairs, excluded 1396 neutral samples
+[20:14:21] INFO: Created evaluation set: 1376 samples
+[20:14:21] INFO: All validation checks passed!

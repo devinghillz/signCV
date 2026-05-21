@@ -1,0 +1,17 @@
+{
+  "target_category": "SES",
+  "dataset_source": "Elfsong/BBQ",
+  "statistics": {
+    "total_samples": 6864,
+    "filtered_samples": 6864,
+    "neutral_samples_excluded": 1401,
+    "final_training_samples": 4090
+  },
+  "seed": 42,
+  "preprocessing_date": "2026-05-05T20:14:24.206844",
+  "data_quality": {
+    "neutral_samples_excluded": true,
+    "single_category_focus": true,
+    "mistral_chat_format": true
+  }
+}

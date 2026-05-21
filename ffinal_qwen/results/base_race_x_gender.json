@@ -1,0 +1,14 @@
+{
+  "Bias": 0.09387550200803213,
+  "Delta": 0.8122489959839359,
+  "Bal": 0.5938755020080322,
+  "Target_Acc": 0.9061244979919679,
+  "Ambig_Acc": 0.010150375939849625,
+  "Acc_all": 0.46152882205513784,
+  "n_target": 3984,
+  "n_ambig": 7980,
+  "n_overall": 15960,
+  "PPL": null,
+  "model_path": "Qwen/Qwen2.5-7B-Instruct",
+  "eval_json": "./processed_bbq/eval_race_x_gender.json"
+}

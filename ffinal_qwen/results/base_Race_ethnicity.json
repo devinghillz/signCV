@@ -1,0 +1,14 @@
+{
+  "Bias": 0.012269938650306749,
+  "Delta": 0.9754601226993864,
+  "Bal": 0.5122699386503067,
+  "Target_Acc": 0.9877300613496932,
+  "Ambig_Acc": 0.01928374655647383,
+  "Acc_all": 0.47238372093023256,
+  "n_target": 326,
+  "n_ambig": 726,
+  "n_overall": 1376,
+  "PPL": 64.54715587136003,
+  "model_path": "Qwen/Qwen2.5-7B-Instruct",
+  "eval_json": "./processed_bbq/Race_ethnicity/eval_data.json"
+}

@@ -1,0 +1,52 @@
+{
+  "merged_dir": "checkpoints/merged/signcv",
+  "eps": 1e-10,
+  "pairwise": [
+    {
+      "sign_agreement": 0.5139264464378357,
+      "nonzero_overlap_jaccard": 0.49005301159477466,
+      "cosine_similarity": 0.04730691760778427,
+      "l2_frobenius_a": 5.124922752380371,
+      "l2_frobenius_b": 5.232922077178955,
+      "n_elements": 6525288448,
+      "n_both_nonzero": 2818083624,
+      "nonzero_intersection_ratio": 0.43187111902520453,
+      "pair": "Race\u2013Gender",
+      "pair_key": "race-gender"
+    },
+    {
+      "sign_agreement": 0.5129867196083069,
+      "nonzero_overlap_jaccard": 0.4880186012067755,
+      "cosine_similarity": 0.0425129272043705,
+      "l2_frobenius_a": 5.124922752380371,
+      "l2_frobenius_b": 5.145092010498047,
+      "n_elements": 6525288448,
+      "n_both_nonzero": 2802363967,
+      "nonzero_intersection_ratio": 0.42946208268523733,
+      "pair": "Race\u2013SES",
+      "pair_key": "race-ses"
+    },
+    {
+      "sign_agreement": 0.5178431868553162,
+      "nonzero_overlap_jaccard": 0.4909772251228233,
+      "cosine_similarity": 0.05440448597073555,
+      "l2_frobenius_a": 5.232922077178955,
+      "l2_frobenius_b": 5.145092010498047,
+      "n_elements": 6525288448,
+      "n_both_nonzero": 2824277762,
+      "nonzero_intersection_ratio": 0.4328203702421217,
+      "pair": "Gender\u2013SES",
+      "pair_key": "gender-ses"
+    }
+  ],
+  "triple_on_support": {
+    "triple_sign_agreement": 0.2730993330478668,
+    "n_triple_nonzero": 1854412722.0
+  },
+  "cross_axis_delta_star_survivor": 0.07761187479079545,
+  "within_axis_survivors": {
+    "within_race": 0.6541250274243815,
+    "within_gender": 0.6590203799064301,
+    "within_ses": 0.6553487630590028
+  }
+}
