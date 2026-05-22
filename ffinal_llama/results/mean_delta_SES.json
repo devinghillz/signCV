@@ -1,0 +1,14 @@
+{
+  "Bias": 0.042042042042042045,
+  "Delta": 0.9159159159159158,
+  "Bal": 0.542042042042042,
+  "Target_Acc": 0.9579579579579579,
+  "Ambig_Acc": 0.005805515239477504,
+  "Acc_all": 0.4857975236707939,
+  "n_target": 333,
+  "n_ambig": 689,
+  "n_overall": 1373,
+  "PPL": 49.998439577618896,
+  "model_path": "./checkpoints/debiased_mean_delta_k0.5",
+  "eval_json": "./processed_bbq/SES/eval_data.json"
+}

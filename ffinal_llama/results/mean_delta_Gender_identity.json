@@ -1,0 +1,14 @@
+{
+  "Bias": 0.05338078291814947,
+  "Delta": 0.893238434163701,
+  "Bal": 0.5533807829181494,
+  "Target_Acc": 0.9466192170818505,
+  "Ambig_Acc": 0.0035087719298245615,
+  "Acc_all": 0.47266313932980597,
+  "n_target": 281,
+  "n_ambig": 570,
+  "n_overall": 1134,
+  "PPL": 67.19740672813151,
+  "model_path": "./checkpoints/debiased_mean_delta_k0.5",
+  "eval_json": "./processed_bbq/Gender_identity/eval_data.json"
+}

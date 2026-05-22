@@ -1,0 +1,9 @@
+checkpoints/
+checkpoints_prev_*/
+results_prev_*/
+*.out
+logs_*
+__pycache__/
+.venv/
+*.bak
+*.bak_*

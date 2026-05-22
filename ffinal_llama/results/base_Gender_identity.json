@@ -1,0 +1,14 @@
+{
+  "Bias": 0.0498220640569395,
+  "Delta": 0.9003558718861211,
+  "Bal": 0.5498220640569396,
+  "Target_Acc": 0.9501779359430605,
+  "Ambig_Acc": 0.0035087719298245615,
+  "Acc_all": 0.47354497354497355,
+  "n_target": 281,
+  "n_ambig": 570,
+  "n_overall": 1134,
+  "PPL": 72.5070964012439,
+  "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "eval_json": "./processed_bbq/Gender_identity/eval_data.json"
+}
