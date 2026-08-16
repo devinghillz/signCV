@@ -1,0 +1,7 @@
+[20:14:22] INFO: Loaded 6864 samples for SES
+[20:14:22] INFO: Sample fields: ['category', 'example_id', 'question_index', 'question_polarity', 'context_condition', 'context', 'question', 'ans0', 'ans1', 'ans2', 'answer_info', 'answer_label', 'target_label', 'additional_metadata']
+[20:14:22] INFO: Category already filtered: 6864 samples
+[20:14:22] INFO: Split complete: Train=5491, Test=1373
+[20:14:23] INFO: Created 4090 forget/retain pairs, excluded 1401 neutral samples
+[20:14:23] INFO: Created evaluation set: 1373 samples
+[20:14:23] INFO: All validation checks passed!
