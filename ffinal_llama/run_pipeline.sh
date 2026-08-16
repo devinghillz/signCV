@@ -12,7 +12,7 @@ set -euo pipefail
 BASE_MODEL="meta-llama/Meta-Llama-3-8B-Instruct"
 AXES=(race gender ses)
 LRS=(0.0001 0.0002)
-SEEDS=(42 43)
+SEEDS=(42 43 44 45)
 EPOCHS=3
 BATCH_SIZE=1
 GRAD_ACCUM=4

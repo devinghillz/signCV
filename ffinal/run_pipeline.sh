@@ -12,7 +12,7 @@ set -euo pipefail
 BASE_MODEL="mistralai/Mistral-7B-Instruct-v0.3"
 AXES=(race gender ses)
 LRS=(0.0001 0.0002)
-SEEDS=(42 43)
+SEEDS=(42 43 44 45)
 EPOCHS=3
 BATCH_SIZE=1
 GRAD_ACCUM=4
